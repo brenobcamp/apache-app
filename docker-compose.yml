@@ -1,0 +1,11 @@
+version: '3.8'
+
+services:
+  httpd:
+    image: httpd
+    container_name: my-apache-app
+    ports:
+      - "80:80"
+    volumes:
+      - /home/brenocampos/docker/svapache/website:/usr/local/apache2/htdocs
+
